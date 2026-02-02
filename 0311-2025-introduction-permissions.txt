@@ -1,0 +1,120 @@
+FilePermissions:
+*******************
+
+normal or regular file[-]
+directory file[d]
+block file[b]
+symbolic link[l]
+character file[c]
+socket file[s]
+named pipe --ipc
+
+users and groups
+
+owner--u
+group -g
+others -o
+all 
+
+3 types of permissions:
+***************************
+read
+write
+execute
+
+symbolic representation: 
+
++
+-
+=
+read==r
+write==w
+execute==x
+chmod
+chown
+chgrp
+authenitication:
+
+
+authorization: ---permissions
+
+
+
+octal representation
+***********************
+read: 4
+write : 2
+execute 1
+chmod: 
+
+chmod  permissions file
+chown
+chgrp
+
+=========================================
+1) securing the Jenkins credentials
+  sshkeys,api token-----/var/lib/Jenkins/credentials.xml
+chmod 600 
+
+2) managing .ssh directory permissions:
+    key isnot world-redable on ci/cd servers
+
+3) docker socket permissions
+
+4)controlling config file: /etc
+
+640
+
+5) environment file.env
+
+6)githooks/ci scripts
+
+
+system files:
+
+
+ssh  known host on pipelines
+
+
+.kube/config
+
+clear
+cloud infrastructure?
+**********************
+suid  set userid:----->
+   chmod u+s filename
+   chmod u-s filename
+
+sgid
+sticky bit   t
+acl 
+umask
+
+immutable/append attributes: chattr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
